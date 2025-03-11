@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- displays site properly based on user's device -->
+
+      <link
+         rel="icon"
+         type="image/png"
+         sizes="32x32"
+         href="./images/favicon-32x32.png"
+      />
+
+      <title>Frontend Mentor | QR code component</title>
+
+      <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+      <style>
+         @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+         * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+         }
+         body {
+            background: #d3e0ef;
+         }
+         .box-qr {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background: #fff;
+            border-radius: 15px;
+            width: 300px;
+         }
+         .box-qr img {
+            border-radius: 15px;
+            width: 270px;
+            margin: 15px;
+         }
+         .box-qr p {
+            font-family: "Outfit", sans-serif;
+            width: 264px;
+            margin-bottom: 17px;
+         }
+         .box-qr .sec-para {
+            width: 250px;
+            color: hsl(216, 15%, 48%);
+            line-height: 1.7;
+            margin-bottom: 23px;
+         }
+         .box-qr p span {
+            font-size: 22px;
+            font-weight: 700;
+            color: hsl(218, 44%, 22%);
+         }
+      </style>
+   </head>
+   <body>
+      <div class="box-qr">
+         <img src="images/image-qr-code.png" alt="qr-code" />
+         <p><span>Improve your front-end skills by building projects</span></p>
+         <p class="sec-para">
+            Scan the QR code to visit Frontend Mentor and take your coding
+            skills to the next level
+         </p>
+      </div>
+   </body>
+</html>
